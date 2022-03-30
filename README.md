@@ -12,4 +12,33 @@ Fisher considered the question of what linear function of the four measurements 
 
 Discriminant analysis is a statistical classification method used when the dependent variable is categorical. Discriminant analysis looks for the best linear combination of independent variables that will discriminate between the categories of the dependent variables and to see if significant differences exists among the groups of predictor variables. 
 
-It use is for people to explore the world of data mining, it has become a common testing tool in recent times. 
+The Iris dataset use, is for people to explore the world of data mining, it has become a common testing tool in recent times. 
+
+
+Analysis of data
+
+Firstly I read the file into program by importing csv. Pandas is imported as pd for convieniece when using the library in the code.
+
+I used the following -
+
+irisData = pd.read_csv("iris_dataset.csv")
+
+Once the file was read in, I used the shape command to show how many rows and columns were present. This was for me to get the scope of how much data I was reviewing. With this command it showed thre was 150 rows with 5 columns. 
+
+From my research I found then that is common practice in data analaysis to use the head command to check that you are actuaclly reviewing the correct data before your analysis begins. So I printed out the first 5 lines from the dataset to show that I was.
+
+Checking for missing values, in this dataset there is no missing values. This is to ensure that there is biased estimaties that can lead to invalid results.
+
+The next to do was to use the data info command to understand more about the data. From this I found that none of the columns had any null values. Four columns are numerical type and there is one columen used as the categorical type.
+
+Data describe then broke down in the following columns -
+* count - This showed that there was an equal number of attributes for the four columns.
+* mean - This shows that column 1 has the highest mean so the highest numerical values are in column 1(sepal length).
+* min value - Shows the minimum value for each column.
+* standard deviation - 
+* 25% / 50% / 75% - This the percentages of the numeric values. Again column 1 is showing with tthe highest values
+* max value - Shows the maximum value for each column.
+
+I checked and counted the number species before I began plotting any histograms. I wanted to know approximately how the data should look. Having the count gave me a view on what to expect.
+
+
