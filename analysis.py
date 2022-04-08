@@ -9,6 +9,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 iris_data = pd.read_csv("iris_data.csv")
+# Assigning indices for Iris dataset
+# https://realpython.com/python-csv/
+with open("iris.txt", "w") as f:
+    data = f.write("Dataframe for Iris dataset")
+
 # use the head function to ensure you have the correct dataframe
 print("Showing the first 5 lines\n")
 print(iris_data.head())
@@ -28,10 +33,11 @@ print(iris_data.info())
 
 # Use the describe method to analyse the data where the values can be
 # used further on in the program.
+# https://realpython.com/python-csv/
 print("\n-----Analysis of the data-----")
 print(iris_data.describe())
-with open("iris.txt", "w") as f:
-    data = f.write('Summary of varaibles for the Iris dataset\n'+str(iris_data.describe()))
+with open("iris_summary.txt", "w") as f:
+    data = f.write('Summary of variables for the Iris dataset\n'+str(iris_data.describe()))
 
 # show the duplicated rows
 print("\n-----No duplicates as shown-----")
