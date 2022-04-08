@@ -4,15 +4,29 @@
 
 import numpy as np
 import pandas as pd
-import csv
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 iris_data = pd.read_csv("iris_data.csv")
-# Assigning indices for Iris dataset
+
 # https://realpython.com/python-csv/
-with open("iris.txt", "w") as f:
-    data = f.write("Dataframe for Iris dataset")
+# https://stackoverflow.com/questions/43801152/read-output-of-a-csv-file-and-write-it-to-a-text-file-using-python
+
+
+import csv
+
+file = open("iris.txt", "w")
+with open("iris_data.csv") as csvFile:
+    # call the CSV import to read the CSV file
+    readCSV = csv.read(csvFile)
+    for row in readCSV:
+        Id = row[0]
+        Id1 = row[1]
+        file.write()
+file.close()
+
+
 
 # use the head function to ensure you have the correct dataframe
 print("Showing the first 5 lines\n")
