@@ -46,6 +46,8 @@ iris_data[iris_data.duplicated()]
 print("\n-----Count for the number of species-----")
 print(iris_data.value_counts("species"))
 
+
+
 # histogram for sepal length data
 print("\n-----Sepal Length Histogram-----")
 
@@ -109,8 +111,8 @@ print("\n-----Scatter plot for Sepal Length vs Sepal Width-----")
 def sepal_scatter_func():
     plt.scatter(iris_data["sepal_length"], iris_data["sepal_width"])
     plt.title("Sepal Length vs Sepal Width", loc ="left", fontsize=15)
-    plt.xlabel("sepal_width")
-    plt.ylabel("sepal_length")
+    plt.xlabel("sepal_length")
+    plt.ylabel("sepal_width")
     plt.savefig("Sepal_Scatter_plot.png")
     plt.close()
 sepal_scatter_func()
@@ -120,8 +122,8 @@ print("\n-----Scatter plot for Petal Length vs Petal Width-----")
 def petal_scatter_func():
     plt.scatter(iris_data["petal_length"], iris_data["petal_width"])
     plt.title("Petal Length vs Petal Width", loc ="left", fontsize=15)
-    plt.xlabel("petal_width")
-    plt.ylabel("petal_length")
+    plt.xlabel("petal_length")
+    plt.ylabel("petal_width")
     plt.savefig("Petal_Scatter_plot.png")
     plt.close()
 petal_scatter_func()

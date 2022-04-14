@@ -39,6 +39,18 @@ Data describe then broke down in the following columns -
 * 25% / 50% / 75% - This the percentages of the numeric values. Again column 1 is showing with tthe highest values
 * max value - Shows the maximum value for each column.
 
-I checked and counted the number species before I began plotting any histograms. I wanted to know approximately how the data should look. Having the count gave me a view on what to expect.
+As from further research for data analysis, one important action to take is to check if there is any duplicates. If there is duplicates it can they are not found it can give you a false pveriew of the data. In this dataset, there is no duplicates after I ran the following code - iris_data[iris_data.duplicated()].
+
+I checked and counted the number species before I began plotting any histograms. I wanted to know approximately how the data should look. Having the count gave me a view on what to expect. 
+
+The histograms then follow. See the following list with name and png file -
+* Sepal Length Histogram - sepal_length.png
+* Sepal Width Histogram - sepal_width.png
+* Petal Length Histogram - petal_length.png
+* Petal Width HIstogram - petal_width.png
+
+
+
+
 
 
