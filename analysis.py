@@ -46,7 +46,17 @@ iris_data[iris_data.duplicated()]
 print("\n-----Count for the number of species-----")
 print(iris_data.value_counts("species"))
 
+# show species on a pie chart
+print("\n-----Species Pie Chart-----")
 
+def pie_chart_species_func():
+    plt.figure(figsize = (11,8))
+    x = iris_data.value_counts("species")
+    irislabels = ["Iris-setosa", "Iris-veriscolor", "Iris-virginica"]
+    iriscolors = ["black", "yellow", "blue"]
+    plt.pie(x, labels = irislabels, autopct=absolute_value, colors = iriscolors)
+    plt.savefig("pie_chart_species.png")
+pie_chart_species_func()
 
 # histogram for sepal length data
 print("\n-----Sepal Length Histogram-----")
