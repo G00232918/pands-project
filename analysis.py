@@ -1,12 +1,11 @@
 # author: James Connolly
 
-# import the csv file dataset
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-# import csv file for pandas
+# read in the csv file
 iris_data = pd.read_csv("iris_data.csv")
 
 # use the head function to ensure you have the correct dataframe
@@ -54,9 +53,11 @@ def pie_chart_species_func():
     x = iris_data.value_counts("species")
     irislabels = ["Iris-setosa", "Iris-veriscolor", "Iris-virginica"]
     iriscolors = ["black", "yellow", "blue"]
-    plt.pie(x, labels = irislabels, autopct=absolute_value, colors = iriscolors)
+    plt.pie(x, labels = irislabels, colors = iriscolors)
     plt.savefig("pie_chart_species.png")
+    plt.close()
 pie_chart_species_func()
+
 
 # histogram for sepal length data
 print("\n-----Sepal Length Histogram-----")
@@ -116,6 +117,7 @@ petal_width_histo_func()
 
 # scatter plots
 # Reference - https://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.plot.scatter.html
+
 print("\n-----Scatter plot for Sepal Length vs Sepal Width-----")
 
 def sepal_scatter_func():
@@ -138,4 +140,58 @@ def petal_scatter_func():
     plt.close()
 petal_scatter_func()
 
+print("\n-----Scatter plot for Petal Length vs Sepal Length-----")
 
+def sepalvpetal_len_scatter_func():
+    plt.scatter(iris_data["petal_length"], iris_data["sepal_length"])
+    plt.title("Petal Length vs Sepal Length", loc ="left", fontsize=15)
+    plt.xlabel("petal_length")
+    plt.ylabel("sepal_length")
+    plt.savefig("sepalvpetal_len_Scatter_plot.png")
+    plt.close()
+sepalvpetal_len_scatter_func()
+
+print("\n-----Scatter plot for Petal Width vs Sepal Width-----")
+
+def sepalvpetal_wid_scatter_func():
+    plt.scatter(iris_data["petal_width"], iris_data["sepal_width"])
+    plt.title("Petal Width vs Sepal Width", loc ="left", fontsize=15)
+    plt.xlabel("petal_width")
+    plt.ylabel("sepal_width")
+    plt.savefig("sepalvpetal_wid_scatter_plot.png")
+    plt.close()
+sepalvpetal_wid_scatter_func()
+
+print("\n-----Scatter plot for Sepal Length vs Petal Width-----")
+
+def sepallen_v_petalwid_scatter_func():
+    plt.scatter(iris_data["sepal_length"], iris_data["petal_width"])
+    plt.title("Sepal Length vs Petal Width", loc ="left", fontsize=15)
+    plt.xlabel("sepal_length")
+    plt.ylabel("petal_width")
+    plt.savefig("sepallen_v_petalwid_scatter_plot.png")
+    plt.close()
+sepallen_v_petalwid_scatter_func()
+
+print("\n-----Scatter plot for Sepal Width vs Petal Length-----")
+
+def sepallwid_v_petallen_scatter_func():
+    plt.scatter(iris_data["sepal_width"], iris_data["petal_length"])
+    plt.title("Sepal Width vs Petal Length", loc ="left", fontsize=15)
+    plt.xlabel("sepal_width")
+    plt.ylabel("petal_length")
+    plt.savefig("sepalwid_v_petallen_scatter_plot.png")
+    plt.close()
+sepallwid_v_petallen_scatter_func()
+
+# checking correlation
+print("\n-----Heatmap-----")
+
+def heatmap_func():
+    plt.figure(figsize=(10,11))
+    x = sns.heatmap(iris_data.corr(),annot=True)
+    plt.plot()
+    figure = x.get_figure() 
+    figure.savefig("sns-heatmap.png")
+    plt.close()
+heatmap_func()

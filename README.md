@@ -41,13 +41,21 @@ Data describe then broke down in the following columns -
 
 As from further research for data analysis, one important action to take is to check if there is any duplicates. If there is duplicates it can they are not found it can give you a false pveriew of the data. In this dataset, there is no duplicates after I ran the following code - iris_data[iris_data.duplicated()].
 
-I checked and counted the number species before I began plotting any histograms. I wanted to know approximately how the data should look. Having the count gave me a view on what to expect. 
+I checked and counted the number species before I began plotting any histograms. I wanted to know approximately how the data should look. Having the count gave me a view on what to expect. Also I created a pie chart function where you can see the count visually. This is a good representation for a user as they can instantly pick up if there is species that is dominant. You can see there is an equal share for each species in the pie chart.
 
 The histograms then follow. See the following list with name and png file -
 * Sepal Length Histogram - sepal_length.png
 * Sepal Width Histogram - sepal_width.png
 * Petal Length Histogram - petal_length.png
 * Petal Width HIstogram - petal_width.png
+
+I then created the scatter plots. See the following list with name and png file -
+* Sepal Scatter Plot - sepal_scatter_plot.png
+* Petal Scatter Plot - petal_scatter_plot.png
+* Sepal Length v Petal Length Plot - sepalvpetal_len_Scatter_plot.png
+* Sepal Width v Petal Width Plot - sepalvpetal_wid_scatter_plot.png
+* Sepal Length v Petal Width - sepallen_v_petalwid_scatter_plot.png
+* Sepal Width v Petal Length - sepalwid_v_petallen_scatter_plot.png
 
 
 
