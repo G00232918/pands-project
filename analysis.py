@@ -34,6 +34,8 @@ with open("iris_summary.txt", "w") as f:
     data = f.write('Summary of variables for the Iris dataset\n'+str(iris_data.describe()))
 
 # show the duplicated rows
+# Reference - https://www.geeksforgeeks.org/find-duplicate-rows-
+# in-a-dataframe-based-on-all-or-selected-columns/
 print("\n-----No duplicates as shown-----")
 iris_data[iris_data.duplicated()]
 
@@ -41,11 +43,11 @@ iris_data[iris_data.duplicated()]
 # Reference - https://www.tutorialspoint.com/how-can-i-show-figures-separately-in-matplotlib
 # Reference to close figures for the data to show only within the named function -
 # https://matplotlib.org/2.0.2/api/pyplot_api.html
-
 print("\n-----Count for the number of species-----")
 print(iris_data.value_counts("species"))
 
 # show species on a pie chart
+# Reference - https://www.w3schools.com/python/matplotlib_pie_charts.asp
 print("\n-----Species Pie Chart-----")
 
 def pie_chart_species_func():
@@ -92,14 +94,14 @@ print("\n-----Petal Length Histogram-----")
 
 def petal_length_histo_func():
     plt.figure(figsize = (11,8))
-    x = iris_data["petal_length"]
+    x = iris_data["petal_length_in_cm"]
     plt.hist(x, bins = 20, color = "green")
-    plt.title("Petal Length in cm")
+    plt.title("Petal_Length in cm")
     plt.xlabel("Petal_Length_in_cm")
     plt.ylabel("Count")
     plt.savefig("petal_length.png")
     plt.close()
-petal_length_histo_func()
+    petal_length_histo_func()
 
 # histogram for petal width data
 print("\n-----Petal Width Histogram-----")
@@ -189,6 +191,7 @@ print("\n-----Heatmap-----")
 
 def heatmap_func():
     plt.figure(figsize=(10,11))
+    # command to create the heatmap, annot = true is write each data value in the cell.
     x = sns.heatmap(iris_data.corr(),annot=True)
     plt.plot()
     figure = x.get_figure() 
