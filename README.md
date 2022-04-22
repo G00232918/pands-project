@@ -71,9 +71,9 @@ In any heatmap the higher values are shown closer to one and the light colours a
 Petal length and width are positively correlated (r = 0.96), which tells us that as one gets larger so does the other, indicating that petal length and width have a close relationship.
 
 # References -
-techopedia - https://www.techopedia.com/definition/32880/iris-flower-data-set
-statisticssolutions - https://www.statisticssolutions.com/discriminant-analysis/ 
-tutorialspoint - https://www.tutorialspoint.com/python_data_science/python_heat_maps.htm#:~:text=Advertisements,colour%20can%20also%20be%20used.
+* techopedia - https://www.techopedia.com/definition/32880/iris-flower-data-set
+* statisticssolutions - https://www.statisticssolutions.com/discriminant-analysis/ 
+* tutorialspoint - https://www.tutorialspoint.com/python_data_science/python_heat_maps.htm#:~:text=Advertisements,colour%20can%20also%20be%20used.
 
 
 
