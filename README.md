@@ -28,16 +28,16 @@ Following on I used the data info command to understand more about the data. Fro
 
 Data describe then broke down in the following columns -
 * count - This showed that there was an equal number of attributes for the four columns.
-* mean - This shows that column 1 has the highest mean so the highest numerical values are in column 1(sepal length). From the eman value it shows that the petal has the more differential features than the sepal. As the petal width is much smaller than the petal length.
+* mean - This shows that sepal length column has the highest mean. From the mean value it shows that the petal has the more differential features than the sepal. As the petal width is much smaller than the petal length.
 * min value - Shows the minimum value for each column.
 * standard deviation - The standard deviation shows how dispersed the data. In this dataset the most dispersed variable is the sepal width.
-* 25% / 50% / 75% - This the percentages of the numeric values. Again column 1 is showing with tthe highest values
+* 25% / 50% / 75% - These are the percentages of the numeric values. Again sepal length column is showing the highest values
 * max value - Shows the maximum value for each column.
 
 
 With the data describe information, this gave a desription of the variables. I wrote the results to a text file - iris_summary.txt.
 
-From further research for data analysis, one important action to take is to check if there is any duplicates. If there is duplicates it can they are not found it can give you a false overiew of the data. In this dataset, there is no duplicates after I ran the following code - iris_data[iris_data.duplicated()].
+From further research for data analysis, one important action to take is to check if there is any duplicates. If there is duplicates and they are not found it can give you a false overiew of the data. In this dataset, there is no duplicates after I ran the following code - iris_data[iris_data.duplicated()].
 
 I checked and counted the number species before I began plotting any histograms. I wanted to know approximately how the data should look. Having the count gave me a view on what to expect. Also I created a pie chart function where you can see the count visually. This is a good representation for a user as they can instantly pick up if there is a species that is dominant. You can see there is an equal share for each species in the pie chart.
 
