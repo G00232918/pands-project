@@ -73,8 +73,6 @@ The majority of the scatter plots don't show any strong relationship bar the Pet
 
 Finally I created a heatmap to review the correlation - sns-heatmap.png. A heatmap contains values representing various shades of the same colour for each value to be plotted. Usually the darker shades of the chart represent higher values than the lighter shade. For a very different value a completely different colour can also be used. (tutorialspoint) 
 
-In any heatmap the higher values are shown closer to one and the light colours are for the smaller values. 
-
 Petal length and width are positively correlated (0.96), which tells us that as one gets larger so does the other, indicating that petal length and width have a close relationship.
 
 # References -
