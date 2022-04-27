@@ -18,7 +18,7 @@ Firstly I read the file into program by importing csv. Pandas is imported as pd 
 
 I used the following - irisData = pd.read_csv("iris_dataset.csv")
 
-Once the file was read in, I used the shape command to show how many rows and columns were present. This was for me to get the scope of how much data I was reviewing. With this command it showed thre was 150 rows with 5 columns. 
+Once the file was read in, I used the shape command to show how many rows and columns were present. This was for me to get the scope of how much data I was reviewing. With this command it showed there was 150 rows with 5 columns. 
 
 From my research I found then that is common practice in data analysis to use the head command to check that you are actuaclly reviewing the correct data before your analysis begins. So I printed out the first 5 lines from the dataset to show that I was.
 
@@ -38,19 +38,23 @@ From further research for data analysis, one important action to take is to chec
 
 I checked and counted the number species before I began plotting any histograms. I wanted to know approximately how the data should look. Having the count gave me a view on what to expect. Also I created a pie chart function where you can see the count visually. This is a good representation for a user as they can instantly pick up if there is a species that is dominant. You can see there is an equal share for each species in the pie chart.
 
+# Histograms
+
 The histograms then follow. See the following list with name and png file -
 * Sepal Length Histogram - sepal_length.png
 * Sepal Width Histogram - sepal_width.png
 * Petal Length Histogram - petal_length.png
 * Petal Width HIstogram - petal_width.png
 
- # Histogram Summary -
+ # Summary -
 
 From the Sepal Length I found that the highest counts in the range of 5cm - 5.5cm in length. Also the higher amounts are between 5cm and 6.5cm, so the Sepal length grow to this size more consistently. For Sepal Width, the most frequent range to grow to, is 2.5cm to 3.5cm.
 
 For Petal length, the highest count is clearly in the range of 1cm - 2cm. Also for the Petal Width the highest count is at the lower end of the scale from the range from 0-1cm. 
 
 The Sepal is a bigger part of the Iris according to the counts in the histogram data. 
+
+# Scatter Plots
 
 I then created the scatter plots. See the following list with name and png file -
 * Sepal Scatter Plot - sepal_scatter_plot.png
@@ -60,7 +64,7 @@ I then created the scatter plots. See the following list with name and png file 
 * Sepal Length v Petal Width - sepallen_v_petalwid_scatter_plot.png
 * Sepal Width v Petal Length - sepalwid_v_petallen_scatter_plot.png
 
-# Scatter plot summary -
+# Summary -
 
 The majority of the scatter plots don't show any strong relationship bar the Petal Scatter plot. This shows that there is a strong linear relationship for the Petal Scatter plot because the plots are showing around the middle of the diagram. These doesn't appear to be any outliers.
 
@@ -68,7 +72,7 @@ Finally I created a heatmap to review the correlation - sns-heatmap.png. A heatm
 
 In any heatmap the higher values are shown closer to one and the light colours are for the smaller values. 
 
-Petal length and width are positively correlated (r = 0.96), which tells us that as one gets larger so does the other, indicating that petal length and width have a close relationship.
+Petal length and width are positively correlated (0.96), which tells us that as one gets larger so does the other, indicating that petal length and width have a close relationship.
 
 # References -
 * techopedia - https://www.techopedia.com/definition/32880/iris-flower-data-set
