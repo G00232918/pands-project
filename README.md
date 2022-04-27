@@ -20,9 +20,9 @@ I used the following - irisData = pd.read_csv("iris_dataset.csv")
 
 Once the file was read in, I used the shape command to show how many rows and columns were present. This was for me to get the scope of how much data I was reviewing. With this command it showed there was 150 rows with 5 columns. 
 
-From my research I found then that is common practice in data analysis to use the head command to check that you are actually reviewing the correct data before your analysis begins. So I printed out the first 5 lines from the dataset to show that I was.
+From my research I found that this is common practice in data analysis to use the head command to check that you are actually reviewing the correct data before your analysis begins. So I printed out the first 5 lines from the dataset to show that I was.
 
-Checking for missing values, in this dataset there is no missing values. This is to ensure that there is biased estimaties that can lead to invalid results.
+Checking for missing values, in this dataset there is no missing values. This is to ensure that there is no biased estimaties that can lead to invalid results.
 
 Following on I used the data info command to understand more about the data. From this I found that none of the columns had any null values. Four columns are numerical type and there is one column used as the categorical type.
 
