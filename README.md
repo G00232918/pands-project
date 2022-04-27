@@ -20,11 +20,11 @@ I used the following - irisData = pd.read_csv("iris_dataset.csv")
 
 Once the file was read in, I used the shape command to show how many rows and columns were present. This was for me to get the scope of how much data I was reviewing. With this command it showed there was 150 rows with 5 columns. 
 
-From my research I found then that is common practice in data analysis to use the head command to check that you are actuaclly reviewing the correct data before your analysis begins. So I printed out the first 5 lines from the dataset to show that I was.
+From my research I found then that is common practice in data analysis to use the head command to check that you are actually reviewing the correct data before your analysis begins. So I printed out the first 5 lines from the dataset to show that I was.
 
 Checking for missing values, in this dataset there is no missing values. This is to ensure that there is biased estimaties that can lead to invalid results.
 
-Following on I used the data info command to understand more about the data. From this I found that none of the columns had any null values. Four columns are numerical type and there is one columen used as the categorical type.
+Following on I used the data info command to understand more about the data. From this I found that none of the columns had any null values. Four columns are numerical type and there is one column used as the categorical type.
 
 Data describe then broke down in the following columns -
 * count - This showed that there was an equal number of attributes for the four columns.
@@ -33,6 +33,9 @@ Data describe then broke down in the following columns -
 * standard deviation - The standard deviation shows how dispersed the data. In this dataset the most dispersed variable is the sepal width.
 * 25% / 50% / 75% - This the percentages of the numeric values. Again column 1 is showing with tthe highest values
 * max value - Shows the maximum value for each column.
+
+
+With the data describe information, this gave a desription of the variables. I wrote the results to a text file - iris_summary.txt.
 
 From further research for data analysis, one important action to take is to check if there is any duplicates. If there is duplicates it can they are not found it can give you a false overiew of the data. In this dataset, there is no duplicates after I ran the following code - iris_data[iris_data.duplicated()].
 
