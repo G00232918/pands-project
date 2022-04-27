@@ -14,7 +14,7 @@ The Iris dataset use, is for people to explore the world of data mining, it has 
 
 # Analysis of data
 
-Firstly I read the file into program by importing csv. Pandas is imported as pd for convenience when using the library in the code.
+Firstly I read the file into program by importing csv. Pandas is imported as pd for convenience when using the library in the code. Matplotlib is used to create the histograms and seaplot for the heatmap at the end of the program.
 
 I used the following - irisData = pd.read_csv("iris_dataset.csv")
 
@@ -66,7 +66,7 @@ I then created the scatter plots. See the following list with name and png file 
 
 # Summary -
 
-The majority of the scatter plots don't show any strong relationship bar the Petal Scatter plot. This shows that there is a strong linear relationship for the Petal Scatter plot because the plots are showing around the middle of the diagram. These doesn't appear to be any outliers.
+The majority of the scatter plots don't show any strong relationship bar the Petal Scatter plot. This shows that there is a strong linear relationship for the Petal Scatter plot because the plots are showing around the middle of the diagram. There doesn't appear to be any outliers.
 
 Finally I created a heatmap to review the correlation - sns-heatmap.png. A heatmap contains values representing various shades of the same colour for each value to be plotted. Usually the darker shades of the chart represent higher values than the lighter shade. For a very different value a completely different colour can also be used. (tutorialspoint) 
 

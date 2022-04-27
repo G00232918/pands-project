@@ -1,5 +1,7 @@
 # author: James Connolly
 
+# imports used for the analysis
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -94,14 +96,14 @@ print("\n-----Petal Length Histogram-----")
 
 def petal_length_histo_func():
     plt.figure(figsize = (11,8))
-    x = iris_data["petal_length_in_cm"]
+    x = iris_data["petal_length"]
     plt.hist(x, bins = 20, color = "green")
-    plt.title("Petal_Length in cm")
+    plt.title("Petal_Length_in_cm")
     plt.xlabel("Petal_Length_in_cm")
     plt.ylabel("Count")
     plt.savefig("petal_length.png")
     plt.close()
-    petal_length_histo_func()
+petal_length_histo_func()
 
 # histogram for petal width data
 print("\n-----Petal Width Histogram-----")
